@@ -1,0 +1,37 @@
+:root{
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items:center;
+    background: #454545;
+}
+
+.container{
+    width: 700px;
+    height: 300px;
+    background-color: grey;
+    border-width: 1px;
+    display: flex;
+
+    border-radius: 10px;
+    
+}
+
+
+.card{
+    background-color: darkgrey;
+    margin: 15px;
+    width: 30%;
+    height: 70%;
+    align-self:center;
+    border-radius: 10px;
+    transition-duration: 15ms;   
+}
+.card:hover{
+    
+    background-color: #9c9c9c;
+    transform: scale(1.05);
+}
+.card:active{
+    transform: scale(1);
+}
