@@ -22,20 +22,18 @@
     border-width: 1px;
     display: flex;
     flex-direction: row;
-
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
     
     
 }
 
 
 .card{
-    opacity: 1;
-    transition: opacity 0.2s ease;
+    opacity: 0;
+    transform: scale(1);
     background-color: darkgrey;
-    margin: 15px;
-    width: 30%;
+    margin: 10px;
+    width: 25%;
     height: 70%;
     align-self:center;
     border-radius: 10px;  
@@ -45,10 +43,11 @@
     background-color: #9c9c9c;
     transform: scale(1.05);
 }
-.card.hidden{
-    opacity: 0;
-    pointer-events: none;
-}
+
 .card:active{
     transform: scale(1);
+}
+
+.card.contActive{
+    opacity: 1;
 }
